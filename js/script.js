@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	var submit = ".submit";
-	var main = ".main"
+	var main = $(".main")
 	$(submit).mousedown(function() {
 		var value = $(".input-text").val();
 		var valNumber = +value;
@@ -11,24 +11,24 @@ $(document).ready(function() {
 			alert("Please provide a whole number.")
 		}
 		else {
-			$(main).addClass("testing");
+			main.addClass("testing");
 			for (var i = 1; i <= valNumber; i++) {
 				if ((i % 3 == 0) && (i % 5 == 0)) {
-					$(main).append("<p>FizzBuzz</p>");
+					main.append("<p>FizzBuzz</p>");
 				}
 				else if (i % 3 == 0) {
-					$(main).append("<p>Fizz</p.");
+					main.append("<p>Fizz</p.");
 				}
 				else if (i % 5 == 0) {
-					$(main).append("<p>Buzz</p>");
+					main.append("<p>Buzz</p>");
 				}
 				else {
-					$(main).append("<p>" + i + "</p>");
+					main.append("<p>" + i + "</p>");
 				}
 			}
 		}
 	});
 	$(".clear").mousedown(function () {
-		$(main).remove();
+		main.remove();
 	});
 });
