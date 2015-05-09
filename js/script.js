@@ -6,15 +6,14 @@ $(document).ready(function() {
 		var valNumber = +value;
 		if (isNaN(valNumber)) {
 			alert("Please enter a real number!");
-			console.log(typeof value);
 		}
 		else {
+			$(main).addClass("testing");
 			for (var i = 1; i <= valNumber; i++) {
 				if ((i % 3 == 0) && (i % 5 == 0)) {
 					$(main).append("<p>FizzBuzz</p>");
 				}
 				else if (i % 3 == 0) {
-					console.log("Fizz");
 					$(main).append("<p>Fizz</p.");
 				}
 				else if (i % 5 == 0) {
@@ -25,5 +24,8 @@ $(document).ready(function() {
 				}
 			}
 		}
+	});
+	$(".clear").mousedown(function () {
+		$(main).remove();
 	});
 });

@@ -461,3 +461,7 @@ h1 {
 .submit {
   margin-top: 10px;
 }
+.main p {
+  color: #DDD8B8 ;
+  line-height: 5px;
+}
