@@ -7,6 +7,9 @@ $(document).ready(function() {
 		if (isNaN(valNumber)) {
 			alert("Please enter a real number!");
 		}
+		else if (valNumber % 1 != 0) {
+			alert("Please provide a whole number.")
+		}
 		else {
 			$(main).addClass("testing");
 			for (var i = 1; i <= valNumber; i++) {
