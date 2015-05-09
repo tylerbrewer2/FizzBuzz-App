@@ -1,5 +1,6 @@
 $(document).ready(function() {
 	var submit = ".submit";
+	var main = ".main"
 	$(submit).mousedown(function() {
 		var value = $(".input-text").val();
 		var valNumber = +value;
@@ -10,16 +11,17 @@ $(document).ready(function() {
 		else {
 			for (var i = 1; i <= valNumber; i++) {
 				if ((i % 3 == 0) && (i % 5 == 0)) {
-					console.log("Fizzbuzz");
+					$(main).append("<p>FizzBuzz</p>");
 				}
 				else if (i % 3 == 0) {
 					console.log("Fizz");
+					$(main).append("<p>Fizz</p.");
 				}
 				else if (i % 5 == 0) {
-					console.log("Buzz");
+					$(main).append("<p>Buzz</p>");
 				}
 				else {
-					console.log(i);
+					$(main).append("<p>" + i + "</p>");
 				}
 			}
 		}
