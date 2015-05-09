@@ -439,3 +439,25 @@ th {
 div {
   border: 1px solid #000000;
 }
+html {
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #631A86;
+  font-family: "Open Sans", sans-serif;
+}
+h1 {
+  color: #DDD8B8;
+  font-size: 75px;
+  font-weight: 800;
+}
+.input {
+  margin-top: -50px;
+}
+.input p {
+  color:#DDD8B8;
+  font-weight: 600;
+}
+.submit {
+  margin-top: 10px;
+}
